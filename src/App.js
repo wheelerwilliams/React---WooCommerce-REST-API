@@ -20,7 +20,7 @@ function App() {
   let fetchOrders = () => {
     api
       .get("orders", {
-        per_page: 20,
+        per_page: 100,
       })
       .then((response) => {
         if (response.status === 200) {
